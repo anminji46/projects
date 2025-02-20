@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {padding: 0;margin: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {font: 12px "Kanit", sans-serif; color : #333; background: #F5F5F5;}
+.inner {width: 400px; margin: 0 auto; /* outline: 1px dotted red; */}
+.clearFix::after {content: ''; display: block; clear: both;}
+.wrap {
+  width: 1200px;
+  margin: 200px auto;
+  /* outline: 1px dotted red; */
+}
+.wrap .join {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 500px;
+  background: #789DBC;
+  border-radius: 50px;
+  /* outline: 1px dotted blue; */
+}
+.wrap .join .joinBtn {
+  position: absolute;
+  left: 365px;
+  top: 200px;
+  z-index: 30;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #E78F81;
+  border-radius: 50px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #E78F81;
+  transition: 1s;
+}
+.wrap .join .joinBtn:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+.wrap .join .joinBtn p a {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+.wrap .join .logo {
+  margin: 30px 0;
+  padding-left: 30px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 10px;
+  transition: 1s;
+}
+.wrap .join .logo:hover {
+  letter-spacing: 3px;
+} 
+.wrap .join .welcome {
+  padding: 20px;
+  /* padding-left: 40px; */
+  text-align: center;
+  font-size: 16px;
+  /* font-weight: normal; */
+}
+.wrap .join .welcome h2:nth-child(2) {
+  padding-top: 10px;
+  font-size: 40px;
+}
+.wrap .join .introduction {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.wrap .login {
+  float: left;
+  width: 800px;
+  height: 500px;
+  padding: 70px 0;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background: #FEF9F2;
+  /* outline: 1px dotted blue; */
+}
+.wrap .login .title {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  /* outline: 1px dotted red; */
+}
+.wrap .login .title h1 {
+  float: left;
+  width: 200px;
+  /* padding-right: 10px; */
+  font-size: 50px;
+  /* outline: 1px dotted red; */
+}
+.wrap .login .title p {
+  float: left;
+  width: 200px;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  /* outline: 1px dotted red; */
+
+}
+.wrap .login .loginBox {}
+.wrap .login .loginBox p {
+  padding: 10px 0;
+}
+.wrap .login .loginBox p input {
+  width: 400px;
+  height: 50px;
+  padding-left: 30px;
+  border: 3px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.wrap .login .option {
+  padding: 5px 0;
+}
+.wrap .login .option .check {
+  float: left;
+  font-size: 16px;
+}
+.wrap .login .option .identify {
+  float: right;
+  font-size: 16px;
+  color: #ccc;
+}
+.wrap .login .option .identify:hover a {
+  font-size: 16px;
+  color: #333;
+}
+.wrap .login .btn {
+  padding: 20px 0;
+}
+.wrap .login .btn input {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #FFCFB3;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  background: #FFCFB3;
+}
+.wrap .login .btn input:hover {
+  background: #FFF5CD;
+  border: none;
+  color: #FFCFB3;
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+@import url('./header.css');
+@import url('./slide.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./category.css');
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color:inherit;}
+body {font:12px  'Apple SD Gothic Neo'; color:#333;}
+address {font-style: normal;}
+small {font-size: 12px;}
+
+/* common */
+.inner {width: 1000px; margin: 0 auto;}
+
+/* wrap */
+#wrap {
+  display: flex;
+  background: rgb(245, 245, 247);
+
+}
+/* main */
+#main {
+  flex: 9;
+  width: 90%;
+  margin: 0 auto;
+}

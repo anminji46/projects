@@ -1,0 +1,174 @@
+reset
+* {padding: 0; margin: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+/* 글자기본서식 */
+body {font: 12px '돋움',dotum,sans-serif; color:#333;}
+/* 공통서식 */
+.inner {width: 1290px; margin: 0 auto; /* outline: 1px dotted red; */}                                              
+.clearFix::after {content: ''; display: block; clear: both;}
+.float {float: left;}
+/* footer */
+footer {
+  margin-top: 60px;
+  padding-bottom: 50px;
+  border-top: 1px solid #ebebeb;
+  background: #f5f6f7;
+  /* outline: 1px solid blue; */
+}
+/* banner */
+footer .banner {
+  border-bottom: 1px solid #ebebeb;
+}
+footer .banner .banners {
+  float: left;
+  width: 430px;
+  padding: 20px 0;
+}
+footer .banner .banners .bi {
+  float: left;
+}
+footer .banner .banners .bc {
+  float: left;
+}
+footer .banner .banners .bc h2 {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  background: #a0adb2;
+}
+footer .banner .banners .bc h3 {
+  margin: 0 15px;
+}
+footer .banner .banners .bc p {
+  margin: 7px 15px;
+}
+/* news */
+footer .news {
+  padding: 10px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+footer .news .newsTitle {
+  float: left;
+}
+footer .news .newsTitle h2 {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 12px;
+}
+footer .news .newsTitle p {
+  display: inline-block;
+}
+footer .news .newsFull {
+  float: right;
+  text-align: right;
+  line-height: 38px;
+  font-weight: bold;
+}
+/* btmNav */
+footer .btmNav {
+  /* padding: 10px 0; */
+  height: 90px;
+  /* line-height: 90px; */
+  border-bottom: 1px solid #ebebeb;
+  /* outline: 1px dotted red; */
+}
+footer .btmNav .btmLink {
+  float: left;
+  padding: 9px 0;
+  /* outline: 1px solid pink; */
+}
+footer .btmNav .btmLink h2 {
+  float: left;
+  width: 60px;
+  font-size: 12px;
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmLink ul {
+  float: left;
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmLink ul li {
+  float: left;
+  padding: 0 10px;
+  background:url(../images/bullet.png) no-repeat 0 50%;
+  /* outline: 1px dotted red; */
+}
+footer .btmNav .btmLink ul li:first-child {
+  padding-left: 0;
+  background: none;
+}
+footer .btmNav .btmLink ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .btmNav .btmLink .partners {
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmLink .developers {
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmgoto{
+  float: right;
+  padding: 22px 0;
+  /* line-height: 90px; */
+  /* outline: 1px dotted blueviolet; */
+}
+footer .btmNav .btmContents {
+  float: left;
+  padding-right: 10px;
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmContents h2 {
+  font-size: 12px;
+  /* line-height: 12px; */
+  /* padding: 2px 0; */
+}
+footer .btmNav .btmImages {
+  float: right;
+  /* text-align: right; */
+  /* padding-left: none; */
+  /* outline: 1px dotted red; */
+}
+footer .btmNav .btmWhaleBrowser {
+  float: left;
+  /* display: inline-block; */
+  padding-right: 20px;
+  /* outline: 1px dotted blue; */
+}
+footer .btmNav .btmCompanyGoto {
+  float: left;
+  /* display: inline-block; */
+  /* outline: 1px dotted blue; */
+}
+
+/* copyRight */
+footer .copyRight {
+  margin: 0 auto;
+  width: 800px;
+  height: 61px;
+  /* outline: 1px dotted red; */
+}
+  footer .copyRight ul {
+    /* display: inline-block; */
+  line-height: 61px;
+}
+footer .copyRight ul li {
+  float: left;
+  padding: 0 10px;
+  background: url(../images/bullet.png) no-repeat 0 50%;
+  /* outline: 1px dotted blue; */
+}
+footer .copyRight ul li:first-child {
+  padding-left: none;
+  background: none;
+}
+footer .copyRight ul li a {}
+footer .copyRight small {
+  float: right;
+  line-height: 61px;
+  font-size: 12px;
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* footer */
+footer {
+  background: #eee;
+  /* outline: 1px dotted red; */
+}
+footer address {padding: 20px 0;}
+footer .f__newUser {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .f__newUser p {width: 90%;}
+footer .f__newUser p.ellipsis {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+footer .f__newUser button {width: 10%;}
+footer .footnotes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .f__content {display: none;}
+footer button {
+  cursor: pointer;
+  border: none;
+  text-align: right;
+  background: none;
+}
+footer .breadList {
+  padding: 20px 0;
+  border-top: 1px solid #000;
+}
+footer .breadList ul {
+  display: flex;
+  font-size: 16px;
+}
+footer .breadList ul li {padding-right: 10px;}
+footer nav {
+  display: flex;
+  justify-content: flex-start;
+}
+footer nav ul {flex: 1;}
+footer nav ul li {padding: 5px 0;}
+footer nav ul li:hover {
+  text-decoration: underline;
+}
+footer nav ul li.f__meunTitle:hover {
+  text-decoration: none;
+}
+footer nav .f__meunTitle {font-weight: bold;}
+footer nav .f__padding {padding-top: 20px;}
+footer .copyright {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #000;
+}
+footer .copyright small {flex: 2;}
+footer .copyright ul {
+  display: flex;
+  flex: 3;
+}
+footer .copyright ul li {
+  padding: 0 20px;
+  border-left: 1px solid #000;
+}
+footer .copyright ul li:first-child {border-left: none;}
+footer .copyright ul li:hover {
+  text-decoration: underline;
+}
+footer .copyright>a {
+  flex: 1;
+  text-align: right;
+}

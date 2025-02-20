@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+/* reset */
+* {padding: 0;margin: 0;}
+li {list-style-type: none;}
+a {text-decoration: none; color: inherit;}
+address {font-style: normal;}
+small {font-size: 12px;}
+/* 기본글자서식 */
+body {font: 12px  "Kanit", sans-serif; color:#333;}
+/* 공통서식 */
+.inner {width: 1182px; margin: 0 auto; /* outline:1px dotted red; */}
+.clearFix::after {content: ''; display: block; clear: both;}
+/* 레이아웃 */
+/* header */
+header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  /* outline: 1px dotted blue; */
+}
+header .logo {
+  float: left;
+  padding-top: 80px;
+  font-family: "Lilita One", sans-serif;
+  letter-spacing: 2px;
+}
+
+header nav {
+  float: right;
+  padding-right: 41px;
+}
+header nav .infoMenu {
+  padding-top: 21px;
+  text-align: right;
+  color: gray;
+}
+header nav .infoMenu ul {
+}
+header nav .infoMenu ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+header nav .infoMenu ul li a {}
+header nav .mainMenu {
+  padding-top: 55px;
+  font-weight: bold;
+}
+header nav .mainMenu ul {
+
+}
+header nav .mainMenu ul li {
+  display: inline-block;
+  padding-left: 80px;
+}
+header nav .mainMenu ul li a {}
+
+/* container */
+.container {
+  height: 843px;
+  border-bottom: 1px solid #ebebeb;
+  background-image: url(../images/containerImages03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+.wrap2 {
+  padding-top: 210px;
+  color: #FFE3E3;
+  /* outline: 1px dotted red; */
+}
+.wrap2 h2 {
+  font-size: 100px;
+}
+.wrap2 p {
+  margin-bottom: 70px;
+}
+.wrap2 a {
+  padding: 5px 100px;
+  border: 1px solid #fff;
+  font-weight: bold;
+}
+.wrap2 a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* news */
+.news {
+  /* outline: 1px dotted red; */
+}
+.news .notice {
+  text-align: center;
+  padding-top: 203px;
+  padding-bottom: 54px;
+}
+.news .contents {
+}
+.news .contents .content {
+  float: left;
+  width: 280px;
+  padding-right: 20px;
+  word-break: keep-all;
+}
+.news .contents .content:nth-child(4) {
+  padding-right: 0;
+}
+.news .contents .content h3 {
+  padding-top: 29px;
+  padding-bottom: 17px;
+}
+.news .contents .content .transf figure {
+  overflow: hidden;
+  width: 280px;
+  height: 120px;
+}
+.news .contents .content .transf figure img {
+  transition: .5s;
+}
+.news .contents .content p {
+  line-height: 1.5;
+  padding-bottom: 206px;
+}
+.news .contents .content .transf:hover figure img {
+  transform: scale(1.2);
+}
+.news .contents .content .transf:hover h3,
+.news .contents .content .transf:hover p{
+  text-decoration: underline;
+}
+
+/* footer */
+#footer {
+  padding-top: 79px;
+  padding-bottom: 90px;
+  background: #789DBC;
+  color: #333;
+  /* outlinegray: 3px solid pink; */
+}
+#footer footer {}
+
+#footer footer .top {
+  height: 50px;
+  border-bottom: 1px solid #333;
+  /* outline: 1px dotted blue; */
+
+}
+#footer footer .top .btmLogo {
+  float: left;
+  font-family: "Lilita One", sans-serif;
+  letter-spacing: 2px;
+}
+#footer footer .top .btmMenu {
+  float: right;
+  line-height: 50px;
+  font-weight: bold;
+  /* outline: 1px dotted red; */
+}
+#footer footer .top .btmMenu ul {
+}
+#footer footer .top .btmMenu ul li {
+  display: inline-block;
+  padding-left: 21px;
+}
+#footer footer .top .btmMenu ul li a {
+}
+
+#footer footer .bottom {
+  clear: both;
+}
+#footer footer .bottom .address {
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+#footer footer .bottom .copyright {
+} 

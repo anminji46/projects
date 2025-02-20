@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./css/join.css">
+</head>
+<body>
+  <div class="wrap clearFix">
+    <div id="join">
+      <div class="box">
+        <div class="inner">
+          <h1>DCODELAB</h1>
+          <div id="procedure" class="clearFix">
+            <div class="procedure_inner">
+              <div class="prc_num one">1</div>
+              <p id="one">이용약관 동의</p>
+            </div>
+            <div class="procedure_inner">
+              <div class="prc_num two">2</div>
+              <p id="two">회원 정보 입력</p>
+            </div>
+            <div class="procedure_inner">
+              <div class="prc_num three">3</div>
+              <p>가입 완료</p>
+            </div>
+          </div>
+          <div class="input">
+            <p>
+              <label for="id">아이디</label>
+              <input type="text" id="id" maxlength="15" required>
+              <img src="./images/id30x30.png" alt="" width="30px" height="30px">
+              <span>@dcodelab.com</span>
+              <button type="button">ID 중복확인</button>
+            </p>
+            <p>
+              <label for="pw">비밀번호</label>
+              <input type="password" id="pw" class="width" maxlength="12" required>
+              <img src="./images/password30x30.png" alt="" width="30px" height="30px">
+            </p>
+            <p>
+              <label for="mail">이메일</label>
+              <input type="text" id="mail" class="width" placeholder="[선택]비밀번호찾기 등 본인확인용">
+              <img src="./images/email30x30.png" alt="" width="30px" height="30px">
+            </p>
+            <p>
+              <label for="name">이름</label>
+              <input type="text" id="name" class="width">
+              <img src="./images/name30x30.png" alt="" width="30px" height="30px">
+            </p>
+            <p>
+              <label for="birth">생년월일</label>
+              <input type="text" id="birth" placeholder="년(4자리)">
+              <img src="./images/birth30x30.png" alt="" width="30px" height="30px">
+              <select name="birth" id="birth">
+                <option value="month">월</option>
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+                <option value="4">4월</option>
+                <option value="...">...</option>
+              </select>
+              <select name="birth" id="birth">
+                <option value="day">일</option>
+                <option value="1">1일</option>
+                <option value="2">2일</option>
+                <option value="3">3일</option>
+                <option value="4">4일</option>
+                <option value="5">5일</option>
+                <option value="6">6일</option>
+                <option value="...">...</option>
+              </select>
+            </p>
+            <p>
+              <label for="phone">전화번호</label>
+              <select name="telecom" id="phone">
+                <option value="skt">SKT</option>
+                <option value="kt">KT</option>
+                <option value="LG_U+">LG U+</option>
+              </select>
+              <img src="./images/telecom30x30.png" alt="" width="30px" height="30px">
+              <input type="text" id="phone" placeholder="3자리-4자리-4자리(숫자만입력)">
+              <img class="phoneImg" src="./images/phone30x30.png" alt="" width="30px" height="30px">
+              <button type="button">인증번호 전송</button>
+            </p>
+            <p>
+              <label for="verfication">인증번호</label>
+              <input type="text" id="verfication" placeholder="6자리">
+              <img src="./images/verification30x30.png" alt="" width="30px" height="30px">
+              <button type="button">확인</button>
+            </p>
+          </div>
+          <p class="button">
+            <button type="submit">완료</button>
+            <button type="reset">취소</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="wrap2">  
+      <div id="login">
+        <div class="loginBtn">
+          <p><a href="../login.v2/login.html">LOGIN &gt;</a></p>
+        </div>
+        <div class="lorem">
+          <h1><a href="../main/index.html">DCODELAB</a></h1>
+          <h2>Are you a member?</h2>
+          <h2>HELLO!!</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur id ratione, iste qui deserunt quidem dolor nihil necessitatibus animi dolore aspernatur facere! Quos ab, soluta mollitia harum sit dicta.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut harum asperiores perspiciatis, fugiat eveniet voluptate numquam tempore eligendi commodi mollitia quisquam, quam illum! Perferendis qui ut nulla nam adipisci quam!
+          </p>
+        </div>
+        <div class="forgot">
+          <a href="#">forgot ID?</a>
+          <a href="#">forgot PW?</a>
+        </div>
+      </div>
+      <footer>
+        <div class="btm clearFix">
+          <div class="btmLogo">
+            <h1>DCODELAB</h1>
+          </div>
+          <div class="btmUtil">
+            <ul>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Family Site</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, expedita?</p>
+          <address>TEL:031-111-1234 C.P:010-1234-5678</address>
+          <small>2020 DCODELAB © copyright all right reserved.</small>
+        </div>
+      </footer> 
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+* {padding: 0;margin: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {font: 12px "Kanit", sans-serif; color : #333; }
+/* .inner {width: 400px; margin:0 auto; outline: 1px dotted red; } */
+.clearFix::after {content: ''; display: block; clear: both;}
+input {border: none;}
+
+.wrap {}
+.wrap #join {
+  float: left;
+  width: 70%;
+  min-width: 600px;
+  border-radius: 50px;
+  background: #789DBC;
+}
+.wrap #join .box {
+  width: 80%;
+  min-width: 600px;
+  margin: 100px auto;
+  background: #fff;
+}
+.wrap #join .box .inner {
+  width: 600px;
+  margin: 0 auto;
+  /* outline: 1px dotted red; */
+}
+.wrap #join .box .inner h1 {
+  margin-bottom: 50px;
+  padding-top: 50px;
+  font-family: "Lilita One", sans-serif;
+}
+.wrap #join .box .inner #procedure {
+  /* outline: 1px dotted red; */
+}
+.wrap #join .box .inner #procedure .procedure_inner {
+  float: left;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  /* outline: 1px dotted blue; */
+}
+.wrap #join .box .inner #procedure .procedure_inner .prc_num {
+  margin: 10px auto;
+  width: 40px;
+  height: 40px;
+  border: 3px dashed #7A1CAC;
+  border-radius: 50px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.wrap #join .box .inner #procedure .procedure_inner .two {
+  border: 3px solid #7A1CAC;
+  /* background: #674188; */
+  color: #333;
+}
+.wrap #join .box .inner #procedure .procedure_inner p#two {
+  color: #333;
+} 
+
+.wrap #join .box .inner .input{
+  margin-top: 50px;
+  text-align: center;
+  /* outline: 1px dotted green; */
+}
+.wrap #join .box .inner .input p {
+  position: relative;
+  padding: 15px 0;
+  /* height: 50px; */
+  /* outline: 1px dotted green; */
+
+}
+.wrap #join .box .inner .input p label {
+  position: absolute;
+  top: -3px;
+  color: #ccc;
+  font-weight: bolder;
+  transition: .5s;
+  /* outline: 1px dotted red; */
+}
+.wrap #join .box .inner .input p:focus-within label {
+  color: #333;
+  font-size: 14px;
+}
+.wrap #join .box .inner .input p input {
+  width: 330px;
+  height: 38px;
+  padding-left: 40px;
+  border: 2px solid #ccc;
+  font-family:"Kanit", sans-serif;
+  font-size: 16px;
+}
+
+.wrap #join .box .inner .input p input.width {
+  width: 456px;
+}
+.wrap #join .box .inner .input p input#phone {
+  margin-top: 5px;
+}
+.wrap #join .box .inner .input p select {
+  height: 40px;
+  margin-left: 13px;
+  border: 2px solid #ccc;
+  vertical-align:top;
+  text-align:center;
+}
+.wrap #join .box .inner .input p #birth {
+  width: 140px;
+  /* box-sizing: border-box; */
+}
+.wrap #join .box .inner .input p select[name=telecom] {
+  padding-left: 40px;
+  width: 500px;
+  margin: 0;
+}
+.wrap #join .box .inner .input p button {
+  width: 120px;
+  height: 42px;
+  border: 2px solid #ddd;
+  background: #ddd;
+  font-weight: bold;
+}
+.wrap #join .box .inner .input p button:hover {
+  background: #87A2FF;
+  border: #87A2FF;
+}
+.wrap #join .box .inner .input p img {
+  position: absolute;
+  left: 60px;
+  top: 21px;
+}
+.wrap #join .box .inner .input p img.phoneImg {
+  position: absolute;
+  top: 66px;
+}
+.wrap #join .box .inner .input p span {
+  position: absolute;
+  left: 300px;
+  top: 23px;
+  font-size: 16px;
+}
+.wrap #join .box .inner p.button {
+  margin: auto 0;
+  padding: 100px 0;
+  text-align: right;
+}
+.wrap #join .box .inner p.button button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ddd;
+  background: #ddd;
+}
+.wrap #join .box .inner p.button button:hover {
+  background: #E78F81;
+  border: #E78F81;
+}
+
+.wrap .wrap2 {
+  position: fixed;
+  left: 70%;
+  margin-top: 60px;
+  width: 30%;
+  float: right;
+  /* outline: 1px dotted red; */
+}
+.wrap .wrap2 #login {
+  background: #FEF9F2;
+  border-radius: 50px 50px 0 0;
+}
+.wrap .wrap2 #login .loginBtn {
+  position: absolute;
+  left: -7%;
+  top: 480px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #E78F81;
+  border-radius: 50px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #E78F81;
+  transition: 1s;
+}
+
+.wrap .wrap2 #login .loginBtn:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+.wrap .wrap2 #login .loginBtn p a {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.wrap .wrap2 #login .lorem {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px 0 50px;
+  /* outline: 1px dotted red; */
+}
+.wrap .wrap2 #login .lorem h1 {
+  padding:30px 10px;
+  font-family: "Lilita One", sans-serif;
+  text-align: right;
+  color: #bbb;
+  font-size: 20px;
+  transition: 1s;
+}
+.wrap .wrap2 #login .lorem h1:hover {
+  /* text-shadow: -1px 0px #789DBC, 0 1px #789DBC, 1px 0 #789DBC, 0 -1px #789DBC; */
+  letter-spacing: 3px;
+  color: #333;
+}
+.wrap .wrap2 #login .lorem h2:nth-of-type(1) {
+  padding-left: 5px;
+  font-size: 25px;
+}
+.wrap .wrap2 #login .lorem h2:nth-of-type(2) {
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.wrap .wrap2 #login .lorem p {
+  padding: 5px;
+  padding-top: 50px;
+  font-size: 16px;
+  /* outline: 1px dotted red; */
+}
+.wrap .wrap2 #login .forgot {
+  padding: 10px 20px 100px 20px;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrap .wrap2 #login .forgot a {
+  padding: 10px;
+}
+.wrap .wrap2 #login .forgot a:hover {
+  color: #333;
+}
+.wrap .wrap2 footer {
+  border-radius: 0 0 50px 50px;
+  background: pink;
+}
+
+.wrap .wrap2 footer .btm {
+  padding: 20px;
+  border-bottom: 1px solid rgb(243, 168, 181);
+  /* outline: 1px dotted red; */
+}
+.wrap .wrap2 footer .btm  .btmLogo {
+  float: left;
+}
+.wrap .wrap2 footer .btm  .btmLogo h1 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 16px;
+}
+.wrap .wrap2 footer .btm  .btmUtil {
+  float: right;
+}
+.wrap .wrap2 footer .btm  .btmUtil ul {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.wrap .wrap2 footer .btm  .btmUtil ul li {
+  display: inline-block;
+  /* outline: 1px dotted red; */
+}
+.wrap .wrap2 footer .btm  .btmUtil ul li a {}
+.wrap .wrap2 footer .copyright {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+.wrap .wrap2 footer .copyright p {}
+.wrap .wrap2 footer .copyright address {
+  font-style: normal;
+}
+.wrap .wrap2 footer .copyright small {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 12px;
+  /* outline: 1px  dotted red; */
+}

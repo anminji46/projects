@@ -1,0 +1,285 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+/*  Reset CSS  */
+* {margin:0; padding:0;}
+ol,ul,li {list-style: none;}
+a {outline:0; text-decoration:none; color:inherit;}
+img {border:0;}
+body {font-family:"Orbitron", sans-serif; color:#333;} 
+
+/* 전체 프레임 */
+#wrap {
+  position: fixed; /* screen기준 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1400px;
+  height: 100%;
+  min-height: 780px;
+  background-image: url(../img/bg_morning.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover; /* 이미지비율 유지하면서 빈공간없이 꽉참 */
+  transition: 2s;
+}
+/* 로고 */
+#wrap h1 {
+  position: fixed;
+  top: 30px;
+  left: 60px;
+  background-image: url(../img/logo_b.png);
+  background-repeat: no-repeat;
+  background-size: contain; /* 빈공간은 생기지만 이미지는 다보임 */
+  width: 90px;
+  height: 80px;
+  /* outline: 1px dotted red; */
+}
+#wrap h1 a {
+  display: block;
+  height: 100%;
+  text-indent: -999px; /* LOGO라는 글씨 안보이게 처리하기 위함, 리더기에는 읽히게하기 위함 */
+  /* outline: 3px dotted blue; */
+}
+
+/* 주메뉴 */
+#gnb {
+  position: fixed;
+  top: 50px;
+  right: 200px;
+  /* outline: 1px dotted red; */
+}
+#gnb li {
+  float: left; /* 부모상자에 position값이 영향을 안주므로 해제를 안해도 됨 */
+  margin-left: 30px;
+}
+#gnb li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* sns 버튼 */
+#sns {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+#sns li {
+  float: left;
+  margin-left: 20px;
+}
+#sns li i {
+  font-size: 18px;
+  color: #555;
+  transition: .5s;
+}
+#sns li i:hover {
+  /* li랑 i랑 영역이 같아서 hover를 어디다가 넣어도 상관없음 */
+  transform: scale(1.2);
+}
+
+/* 텍스트 박스 */
+article {
+  position: absolute; /* 가장가까운 부모상자의 positon(static제외) 기준 */
+  top: 350px;
+  left: 150px;
+  width: 450px;
+  /* outline: 1px dotted red; */
+}
+article p {
+  font-size: 50px;
+  color: #666;
+}
+article p strong {
+  color: #111;
+}
+article em {
+  font-size: 14px;
+  font-style: normal;
+  color: #333;
+}
+
+/* 모바일 프레임 */
+figure {
+  position: absolute;
+  top: 200px;
+  right: -300px;
+  width: 1226px;
+  height: 809px;
+  background: url(../img/phone_morning.png) no-repeat;
+  /* outline: 1px dotted red; */
+}
+figure p {
+  overflow: hidden;
+  position: absolute;
+  top: 100px; /* 포토샵으로 거리 확인 */
+  left: 137px; /* 포토샵으로 거리 확인 */
+  width: 540px; /* 포토샵으로 크기 확인 */
+  height: 307px; /* 포토샵으로 크기 확인 */
+  padding-left: 50px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #333;
+  line-height: 4.6; /* 글자크기의 배수만큼 */
+  box-sizing: border-box;
+  /* outline: 1px dotted red; */
+}
+figure p span {
+  position: relative;
+  z-index: 5; /* position값 없이는 사용 X */
+}
+/* 테마 버튼 */
+nav {
+  position: fixed;
+  bottom: 70px;
+  /* left: 6%; */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  /* outline: 1px dotted blue; */
+}
+nav ul {
+  overflow: hidden; /* li에 대한 플롯 해제 */
+  /* background: yellow; */
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  /* outline: 1px dotted blue; */
+}
+nav ul li a {
+  display: block;
+  width: 98%;
+  height: 35px;
+  margin: 0 auto;
+  padding-left: 30px;
+  background: #fff;
+  color: #111;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 3;
+  box-sizing: border-box;
+  transition: .5s;
+}
+nav ul li:hover a,
+nav ul li.on a {
+  background: #111;
+  color: #ddd;
+  opacity: 0.9;
+}
+
+/*아침 테마*/
+#wrap.morning {background-image:url(../img/bg_morning.jpg);}
+#wrap.morning h1 {background-image:url(../img/logo_b.png);}
+#wrap.morning #gnb a {color:#555;}
+#wrap.morning #sns i {color:#555;}
+#wrap.morning figure {background-image:url(../img/phone_morning.png);}
+#wrap.morning article p {color:#666;}
+#wrap.morning article p strong {color:#111;}
+#wrap.morning article em {color:#333;}
+#wrap.morning figure p {color:#333;}
+#wrap.morning>img:nth-of-type(1) {opacity:1;}
+#wrap.morning>img:nth-of-type(2) {opacity:1;} 
+
+/*오후 테마*/
+#wrap.afternoon {background-image:url(../img/bg_afternoon.jpg);}
+#wrap.afternoon h1 {background-image:url(../img/logo_b.png);}
+#wrap.afternoon #gnb a {color:#555;}
+#wrap.afternoon #sns i {color:#555;}
+#wrap.afternoon figure {background-image:url(../img/phone_afternoon.png);}
+#wrap.afternoon article p {color:#666;}
+#wrap.afternoon article p strong {color:#111;}
+#wrap.afternoon article em {color:#333;}
+#wrap.afternoon figure p {color:#333;}
+#wrap.afternoon>img:nth-of-type(1) {opacity:1;}
+#wrap.afternoon>img:nth-of-type(2) {opacity:1;} 
+
+/*저녁 테마*/
+#wrap.evening {background-image:url(../img/bg_evening.jpg);}
+#wrap.evening h1 {background-image:url(../img/logo_w.png);}
+#wrap.evening #gnb a {color:#fff;}
+#wrap.evening #sns i {color:#fff;}
+#wrap.evening figure {background-image:url(../img/phone_evening.png);}
+#wrap.evening article p {color:#444;}
+#wrap.evening article p strong {color:#fff;}
+#wrap.evening article em {color:#333;}
+#wrap.evening figure p {color:#fff;}
+#wrap.evening>img:nth-of-type(1) {opacity:0.6;}
+#wrap.evening>img:nth-of-type(2) {opacity:0.6;} 
+
+/*밤 테마*/
+#wrap.night {background-image:url(../img/bg_night.jpg);}
+#wrap.night h1 {background-image:url(../img/logo_w.png);}
+#wrap.night #gnb a {color:#fff;}
+#wrap.night #sns i {color:#fff;}
+#wrap.night figure {background-image:url(../img/phone_night.png);}
+#wrap.night article p {color:#bbb;}
+#wrap.night article p strong {color:#fff;}
+#wrap.night article em {color:#888;}
+#wrap.night figure p { color:#fff;}
+#wrap.night>img:nth-of-type(1) {opacity:0.1;}
+#wrap.night>img:nth-of-type(2) {opacity:0.1;}
+#wrap.night figure p img.cl1 {opacity:0.4;}
+#wrap.night figure p img.cl2 {opacity:0.4;}
+
+/* 배경 구름 */
+#wrap>img:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  left: -1146px;
+  animation: ani1 110s linear infinite;
+  opacity: 0.8;
+}
+#wrap>img:nth-of-type(2) {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  animation: ani2 100s linear infinite;
+  opacity: 0.8;
+  /* outline: 1px dotted red; */
+}
+
+/* 모바일 구름 */
+figure p img.cl1 {
+  position: absolute;
+  top: 30px;
+  left: -600px;
+  z-index: 4;
+  width: 600px;
+  height: auto;
+  animation: ani3 110s linear infinite;
+  /* outline: 2px dotted blue; */
+}
+figure p img.cl2 {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 4;
+  width: 700px;
+  height: auto;
+  animation: ani4 100s linear infinite;
+  /* outline: 2px dotted blue; */
+}
+
+/* 구름모션 */
+@keyframes ani1 { /* 화면 밖에서 시작 ~ 화면 밖에서 끝 */
+  0% {left: -1146px;} /* 최소 이미지 너비값만큼 */
+  100% {left:1950px;} /* 최소 화면 크기값만큼 */
+}
+@keyframes ani2 {
+  0% {left:0;} 
+  50% {left: 1950px; opacity: 0;}
+  50.001% {left:-1840px; opacity: 0.8;}
+  100% {left:0;} 
+}
+@keyframes ani3 {
+  0% {left: -600px;}
+  100% {left:540px;}
+}
+@keyframes ani4 {
+  0% {left:0;}
+  50% {left: 540px;}
+  50.001% {left: -700px; opacity: 1;}
+  100% {left:0;}
+}
